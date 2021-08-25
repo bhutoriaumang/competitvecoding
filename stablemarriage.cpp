@@ -1,13 +1,50 @@
 #include </Users/bits/stdc++.h>
 using namespace std;
 
-// int cal(map < int , vector < pair <int,int> > > m , map < int , vector < pair <int,int> > > w , vector <int> mf , vector <int> wf , int x){
-//     int n = m.size();
-//     for(int i=0;i<n;i++){
-//         if(wf[m[x]->second[i]].first==0)
-//             return wf[m[x]->second[i]];
-//     }
-// }
+bool singlesremain(int *wf,int n){
+    if(find(wf,wf+n,-1)==wf+n){
+        return false;
+    }
+    return true;
+}
+
+int getrank(vector <int> w, int x,int n){
+    return n - (find(w.begin(),w.end(),x)-w.begin());
+}
+
+void match(int w,int m, int *mf , int *wf){
+    wf[w] = m;
+    mf[m] = w;
+}
+
+void solve(vector<int> *m,vector<int> *w,int n){
+    int wf[n],mf[n];
+    for(int i=0;i<n;i++){
+        wf[i]=-1;
+        mf[i]=-1;
+    }
+    while(singlesremain(wf,n)){
+        for(int i=0;i<n;i++){
+            if(mf[i]==-1){
+                int x = m[i].back() - 1;
+                m[i].pop_back();
+                if(wf[x]==-1){
+                    match(x,i,mf,wf);
+                }
+                else{
+                    int y = wf[x];
+                    if(getrank(w[x],y+1,n) > getrank(w[x],i+1,n)){
+                        match(x,i,mf,wf);
+                        mf[y] = -1;
+                    }
+                }
+            }
+        }
+    }
+    for(int i=0;i<n;i++){
+        cout<<i+1<<" "<<mf[i]+1<<"\n";
+    }
+}
 
 int main(){
     int T;
@@ -15,38 +52,25 @@ int main(){
     while(T-->0){
         int n;
         cin>>n;
-        map <int,vector<pair <int,int> > > m,w;
-        vector <int> mf(0,n+1),wf(0,n+1);
+        vector <int> m[n],w[n];
         for(int i=0;i<n;i++){
-            int t,k;
-            cin>>t;
+            int x;
+            cin>>x;
             for(int j=0;j<n;j++){
-                cin>>k;
-                w[t].push_back(make_pair(k,j+1));
+                cin>>x;
+                w[i].push_back(x);
             }
-            sort(w[t].begin(),w[t].end());
+            reverse(w[i].begin(),w[i].end());
         }
         for(int i=0;i<n;i++){
-            int t,k;
-            cin>>t;
+            int x;
+            cin>>x;
             for(int j=0;j<n;j++){
-                cin>>k;
-                m[t].push_back(make_pair(k,j+1));
+                cin>>x;
+                m[i].push_back(x);
             }
-            sort(m[t].begin(),m[t].end());
+            reverse(m[i].begin(),m[i].end());
         }
-        for(auto it = w.begin();it!=w.end();it++){
-            cout<<it->first<<"\t";
-            for(int i=0;i<n;i++)
-                cout<<it->second[i].first<<" : "<<it->second[i].second<<"\t";
-            cout<<endl;
-        }
-        cout<<"\n\n";
-        for(auto it = m.begin();it!=m.end();it++){
-            cout<<it->first<<"\t";
-            for(int i=0;i<n;i++)
-                cout<<it->second[i].first<<" : "<<it->second[i].second<<"\t";
-            cout<<endl;
-        }
+        solve(m,w,n);
     }
 }
