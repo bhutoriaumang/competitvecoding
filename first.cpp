@@ -1,75 +1,89 @@
-/* C++ implementation of QuickSort */
-#include <iostream>
+// C/C++ program to solve fractional Knapsack Problem
+#include <bits/stdc++.h>
+
 using namespace std;
 
-// A utility function to swap two elements
-void swap(int* a, int* b)
+// Structure for an item which stores weight and
+// corresponding value of Item
+struct Item {
+	int value, weight;
+
+	// Constructor
+	Item()
+	{
+		value=0;
+		weight=0;
+	}
+};
+
+// Comparison function to sort Item according to val/weight
+// ratio
+bool cmp(struct Item a, struct Item b)
 {
-	int t = *a;
-	*a = *b;
-	*b = t;
+	double r1 = (double)a.value / (double)a.weight;
+	double r2 = (double)b.value / (double)b.weight;
+	return r1 > r2;
 }
 
-/* This function takes last element as pivot, places
-the pivot element at its correct position in sorted
-array, and places all smaller (smaller than pivot)
-to left of pivot and all greater elements to right
-of pivot */
-int partition (int arr[], int low, int high)
+// Main greedy function to solve problem
+double fractionalKnapsack(int W, struct Item arr[], int n)
 {
-	int pivot = arr[high]; // pivot
-	int i = (low - 1); // Index of smaller element and indicates the right position of pivot found so far
+	// sorting Item on basis of ratio
+	sort(arr, arr + n, cmp);
 
-	for (int j = low; j <= high - 1; j++)
+	// Uncomment to see new order of Items with their
+	// ratio
+	/*
+	for (int i = 0; i < n; i++)
 	{
-		// If current element is smaller than the pivot
-		if (arr[j] < pivot)
-		{
-			i++; // increment index of smaller element
-			swap(&arr[i], &arr[j]);
+		cout << arr[i].value << " " << arr[i].weight << " :
+	"
+			<< ((double)arr[i].value / arr[i].weight) <<
+	endl;
+	}
+	*/
+
+	int curWeight = 0; // Current weight in knapsack
+	double finalvalue = 0.0; // Result (value in Knapsack)
+
+	// Looping through all Items
+	for (int i = 0; i < n; i++) {
+		// If adding Item won't overflow, add it completely
+		if (curWeight + arr[i].weight <= W) {
+			curWeight += arr[i].weight;
+			finalvalue += arr[i].value;
+		}
+
+		// If we can't add current Item, add fractional part
+		// of it
+		else {
+			int remain = W - curWeight;
+			finalvalue += arr[i].value
+						* ((double)remain
+							/ (double)arr[i].weight);
+			break;
 		}
 	}
-	swap(&arr[i + 1], &arr[high]);
-	return (i + 1);
+
+	// Returning final value
+	return finalvalue;
 }
 
-/* The main function that implements QuickSort
-arr[] --> Array to be sorted,
-low --> Starting index,
-high --> Ending index */
-void quickSort(int arr[], int low, int high)
-{
-	if (low < high)
-	{
-		/* pi is partitioning index, arr[p] is now
-		at right place */
-		int pi = partition(arr, low, high);
-
-		// Separately sort elements before
-		// partition and after partition
-		quickSort(arr, low, pi - 1);
-		quickSort(arr, pi + 1, high);
-	}
-}
-
-/* Function to print an array */
-void printArray(int arr[], int size)
-{
-	int i;
-	for (i = 0; i < size; i++)
-		cout << arr[i] << " ";
-	cout << endl;
-}
-
-// Driver Code
+// Driver code
 int main()
 {
-	int arr[] = {10, 7, 8, 9, 1, 5};
-	int n = sizeof(arr) / sizeof(arr[0]);
-	quickSort(arr, 0, n - 1);
-	cout << "Sorted array: \n";
-	printArray(arr, n);
+	int W,n;
+	cin>>n>>W;
+	Item arr[n];
+	for(int i=0;i<n;i++){
+		int x,y;
+		cin>>x>>y;
+		arr[i].value = x;
+		arr[i].weight = y;
+	}
+
+	// Function call
+	cout << "Maximum value we can obtain = "
+		<< fractionalKnapsack(W, arr, n);
 	return 0;
 }
-
-// This code is contributed by rathbhupendra

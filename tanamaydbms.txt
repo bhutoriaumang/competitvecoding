@@ -1,0 +1,6 @@
+Candidate key : (empNum,deptName) or (empNum,deptHead)
+SuperKeys : (empNum,deptName) , (empNum,deptHead) , (empNum,deptHead,firstName) , (empNum,deptHead,empCity) , (empNum,deptHead,deptHead) , (empNum,deptName,firstName) , (empNum,deptName,empCity) , 
+(empNum , deptHead , firstName, empCity) , (empNum , deptName , firstName, empCity) , (empNum,deptHead,deptHead ,firstname), (empNum,deptHead,deptHead,empCity) , (empNum,deptHead,deptHead,firstsName,empCity)
+Primary Key : (empNum, deptHeead)
+Prime Attributes : { empNum , deptHead , dept_name }
+Non-Prime Attributes : { firstName , empCirt }
