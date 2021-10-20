@@ -1,0 +1,1 @@
+{"name":"Local: mexor","url":"/Users/umangbhutoria/Desktop/competitvecoding/mexor.cpp","tests":[{"id":1633084200218,"input":"10\n2\n5\n8\n16\n32\n64\n126\n255\n511\n1027","output":"2\n4\n8\n16\n32\n64\n64\n256\n512\n1024"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/umangbhutoria/Desktop/competitvecoding/mexor.cpp","group":"local","local":true}

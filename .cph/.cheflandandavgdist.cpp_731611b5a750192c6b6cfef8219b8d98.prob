@@ -1,0 +1,1 @@
+{"name":"Local: cheflandandavgdist","url":"/Users/umangbhutoria/Desktop/competitvecoding/cheflandandavgdist.cpp","tests":[{"id":1633168638586,"input":"1\n3 4\n0011\n0000\n0100","output":"1 0 1 1 0"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/umangbhutoria/Desktop/competitvecoding/cheflandandavgdist.cpp","group":"local","local":true}

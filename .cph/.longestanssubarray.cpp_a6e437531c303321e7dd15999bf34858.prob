@@ -1,0 +1,1 @@
+{"name":"Local: longestanssubarray","url":"/Users/umangbhutoria/Desktop/competitvecoding/longestanssubarray.cpp","tests":[{"id":1633082938781,"input":"6\n1\n2\n3\n4\n7\n10","output":"1\n1\n2\n2\n4\n4"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/umangbhutoria/Desktop/competitvecoding/longestanssubarray.cpp","group":"local","local":true}
