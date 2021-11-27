@@ -13,29 +13,28 @@ int main(){
 	}
 	int s,g;
 	cin>>s>>g;
-	queue <int> q;
+	stack <int> q;
 	q.push(s);
 	long long int d = 0,ans=n+1;
 	while(!q.empty()){
-		int x = q.front();
-		visited[x] = 1;
+		int x = q.top();
 		q.pop();
 		d++;
 		for(int i=0;i<n;i++){
-			if(visited[i])
-				continue;
 			if(v[x][i]==1){
 				parent[i] = x;
 				q.push(i);
+                if(i==g){
+                    int t = g;
+                    while(t!=s){
+                        if(t!=s)
+			                cout<<t<<" <- ";
+                        t = parent[t];
+                    }
+			        cout<<t<<endl;
+                    exit(0);
+                }
 			}
 		}
-	}
-	int x = g;
-	while(x!=-1){
-		if(x!=s)
-			cout<<x<<" <- ";
-		else
-			cout<<x<<endl;;
-		x = parent[x];
 	}
 }

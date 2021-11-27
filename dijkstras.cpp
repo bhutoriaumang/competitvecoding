@@ -4,7 +4,7 @@
 #include <vector>
 using namespace std;
 
-#define max 5
+#define max 6
 
 long long int minimum(long long int v[],long long int d[]){
     long long int mini = 10000;
@@ -29,15 +29,15 @@ int main(){
         }
     }
 
-    a[0][1] = 10;
-    a[0][2] = 3;
+    a[0][4] = 8;
+    a[0][1] = 2;
     a[1][2] = 1;
-    a[1][3] = 2;
-    a[2][1] = 4;
-    a[2][3] = 8;
-    a[2][4] = 2;
-    a[3][4] = 7;
-    a[4][3] = 9;
+    a[2][4] = 4;
+    a[2][5] = 5;
+    a[3][0] = 1;
+    a[4][3] = 1;
+    a[4][5] = 7;
+    a[4][1] = 3;
 
     long long int dist[max],visited[max],lastvertex[max];
     for(long long int i=0;i<max;i++){
