@@ -7,7 +7,7 @@ int main(){
     string a,b;
     cout<<"Enter string 1\t:\t";
     cin>>a;
-    cout<<"Enter string 1\t:\t";
+    cout<<"Enter string 2\t:\t";
     cin>>b;
     cout<<"\n\n";
 
