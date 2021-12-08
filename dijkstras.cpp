@@ -39,6 +39,13 @@ int main(){
     a[4][5] = 7;
     a[4][1] = 3;
 
+    int v = 0;
+
+    for(int i=0;i<n;i++){
+        a[i][v] = 0;
+        a[v][i] = 0;
+    }
+
     long long int dist[max],visited[max],lastvertex[max];
     for(long long int i=0;i<max;i++){
         dist[i] = 10000;
