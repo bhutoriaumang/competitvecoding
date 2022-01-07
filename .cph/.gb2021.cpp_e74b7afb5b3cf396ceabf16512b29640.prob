@@ -1,0 +1,1 @@
+{"name":"Local: gb2021","url":"/Users/umangbhutoria/Desktop/competitvecoding/gb2021.cpp","tests":[{"id":1640793060008,"input":"5\n4\n1 2 3 4\n4\n1 1 2 2\n2\n0 -1\n6\n3 -2 4 -1 -4 0\n1\n-100","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/umangbhutoria/Desktop/competitvecoding/gb2021.cpp","group":"local","local":true}
