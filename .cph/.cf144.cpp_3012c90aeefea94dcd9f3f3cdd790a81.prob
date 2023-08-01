@@ -1,0 +1,1 @@
+{"name":"Local: cf144","url":"/Users/umangbhutoria/Desktop/competitvecoding/cf144.cpp","tests":[{"id":1677600433413,"input":"4\n3 11\n13 37\n1 22\n4 100\n","output":""},{"id":1677600678612,"input":"1\n4 100","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/umangbhutoria/Desktop/competitvecoding/cf144.cpp","group":"local","local":true}
