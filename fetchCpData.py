@@ -6,8 +6,8 @@ import string
 import base64
 import json
 
-key = "56925b40489d35e5b9c5db1c4bf9d81ad1ce6f76"
-secret = "0612c968836c8e4a1caf4468a3a3150cb4f737ee"
+key = ""
+secret = ""
 
 
 def generate_api_signature(method, params, secret):
