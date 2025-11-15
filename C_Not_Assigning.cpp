@@ -1,3 +1,9 @@
+/*
+
+Problem Tags: ['constructive algorithms', 'dfs and similar', 'number theory', 'trees'] 
+
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 

@@ -1,3 +1,9 @@
+/*
+
+Problem Tags: ['constructive algorithms', 'greedy', 'implementation'] 
+
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 

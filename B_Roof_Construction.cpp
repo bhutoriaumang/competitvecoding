@@ -1,3 +1,9 @@
+/*
+
+Problem Tags: ['bitmasks', 'constructive algorithms'] 
+
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 

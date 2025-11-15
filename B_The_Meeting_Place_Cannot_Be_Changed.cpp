@@ -1,3 +1,9 @@
+/*
+
+Problem Tags: ['binary search', 'ternary search'] 
+
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 

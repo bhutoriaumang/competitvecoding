@@ -1,3 +1,9 @@
+/*
+
+Problem Tags: ['implementation', 'two pointers'] 
+
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 

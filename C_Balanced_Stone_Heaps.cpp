@@ -1,3 +1,9 @@
+/*
+
+Problem Tags: ['binary search', 'greedy'] 
+
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 

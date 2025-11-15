@@ -1,3 +1,9 @@
+/*
+
+Problem Tags: ['constructive algorithms', 'dp', 'math'] 
+
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 

@@ -1,3 +1,9 @@
+/*
+
+Problem Tags: ['binary search', 'constructive algorithms', 'data structures', 'greedy'] 
+
+*/
+
 #include <iostream>
 #include <vector>
 #include <algorithm>

@@ -1,3 +1,9 @@
+/*
+
+Problem Tags: ['data structures', 'dsu'] 
+
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 

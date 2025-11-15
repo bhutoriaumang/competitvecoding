@@ -1,3 +1,9 @@
+/*
+
+Problem Tags: ['brute force', 'greedy', 'math', 'strings'] 
+
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 long long int m = 1000000000 + 7;

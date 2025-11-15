@@ -1,3 +1,9 @@
+/*
+
+Problem Tags: ['brute force', 'implementation'] 
+
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 

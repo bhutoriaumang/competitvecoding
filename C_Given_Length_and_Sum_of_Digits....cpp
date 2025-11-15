@@ -1,3 +1,9 @@
+/*
+
+Problem Tags: ['dp', 'greedy', 'implementation'] 
+
+*/
+
 #include <iostream>
 #include <cmath>
 using namespace std;

@@ -1,3 +1,9 @@
+/*
+
+Problem Tags: ['dfs and similar', 'dp', 'greedy', 'math', 'math'] 
+
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 

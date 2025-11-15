@@ -1,3 +1,9 @@
+/*
+
+Problem Tags: ['brute force', 'graphs'] 
+
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 

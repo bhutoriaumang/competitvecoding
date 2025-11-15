@@ -1,3 +1,9 @@
+/*
+
+Problem Tags: ['greedy', 'implementation'] 
+
+*/
+
 #include <iostream>
 using namespace std;
 

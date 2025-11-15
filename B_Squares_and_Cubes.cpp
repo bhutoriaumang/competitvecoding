@@ -1,3 +1,9 @@
+/*
+
+Problem Tags: ['implementation', 'math'] 
+
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 

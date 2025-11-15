@@ -1,3 +1,9 @@
+/*
+
+Problem Tags: ['2-sat', 'constructive algorithms', 'greedy', 'string suffix structures', 'strings'] 
+
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 

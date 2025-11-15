@@ -1,3 +1,9 @@
+/*
+
+Problem Tags: ['data structures', 'dp', 'implementation'] 
+
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 

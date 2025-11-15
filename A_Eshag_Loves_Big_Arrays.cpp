@@ -1,3 +1,9 @@
+/*
+
+Problem Tags: ['constructive algorithms', 'greedy', 'math'] 
+
+*/
+
 #include <iostream>
 #include <cmath>
 using namespace std;

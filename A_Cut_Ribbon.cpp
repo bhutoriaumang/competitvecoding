@@ -1,3 +1,9 @@
+/*
+
+Problem Tags: ['brute force', 'dp'] 
+
+*/
+
 #include <iostream>
 using namespace std;
 

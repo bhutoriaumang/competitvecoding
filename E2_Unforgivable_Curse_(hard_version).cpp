@@ -1,3 +1,9 @@
+/*
+
+Problem Tags: ['brute force', 'constructive algorithms', 'dfs and similar', 'dsu', 'graphs', 'greedy', 'strings'] 
+
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 

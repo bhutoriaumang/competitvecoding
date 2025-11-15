@@ -1,3 +1,9 @@
+/*
+
+Problem Tags: ['games', 'greedy', 'sortings'] 
+
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 

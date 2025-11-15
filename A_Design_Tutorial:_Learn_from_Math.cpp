@@ -1,3 +1,9 @@
+/*
+
+Problem Tags: ['math', 'number theory'] 
+
+*/
+
 #include <iostream>
 #include <vector>
 using namespace std;

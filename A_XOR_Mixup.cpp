@@ -1,3 +1,9 @@
+/*
+
+Problem Tags: ['bitmasks', 'brute force'] 
+
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 

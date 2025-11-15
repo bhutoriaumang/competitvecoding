@@ -1,3 +1,9 @@
+/*
+
+Problem Tags: ['math', 'number theory'] 
+
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 #define lli long long int

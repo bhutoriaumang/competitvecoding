@@ -1,3 +1,9 @@
+/*
+
+Problem Tags: ['bitmasks', 'greedy', 'math'] 
+
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 

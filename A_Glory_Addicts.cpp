@@ -1,3 +1,9 @@
+/*
+
+Problem Tags: ['greedy', 'implementation', 'sortings'] 
+
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 

@@ -1,3 +1,9 @@
+/*
+
+Problem Tags: ['brute force', 'greedy', 'sortings'] 
+
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 

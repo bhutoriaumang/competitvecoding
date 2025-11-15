@@ -1,3 +1,9 @@
+/*
+
+Problem Tags: ['geometry', 'greedy', 'implementation'] 
+
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 

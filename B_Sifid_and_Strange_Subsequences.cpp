@@ -1,3 +1,9 @@
+/*
+
+Problem Tags: ['greedy', 'math', 'sortings'] 
+
+*/
+
 #include <iostream>
 #include <vector>
 #include <algorithm>

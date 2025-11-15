@@ -1,3 +1,9 @@
+/*
+
+Problem Tags: ['brute force', 'dfs and similar', 'implementation', 'sortings'] 
+
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 

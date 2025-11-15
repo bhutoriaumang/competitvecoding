@@ -1,3 +1,9 @@
+/*
+
+Problem Tags: ['greedy'] 
+
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 

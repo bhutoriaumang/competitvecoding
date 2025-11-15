@@ -1,3 +1,9 @@
+/*
+
+Problem Tags: ['brute force', 'math', 'number theory'] 
+
+*/
+
 #include <iostream>
 #include <vector>
 #include <algorithm>

@@ -1,3 +1,9 @@
+/*
+
+Problem Tags: ['data structures', 'greedy', 'sortings', 'two pointers'] 
+
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 

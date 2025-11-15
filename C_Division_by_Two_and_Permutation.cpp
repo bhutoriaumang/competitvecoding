@@ -1,3 +1,9 @@
+/*
+
+Problem Tags: ['constructive algorithms', 'flows', 'graph matchings', 'greedy', 'math'] 
+
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 

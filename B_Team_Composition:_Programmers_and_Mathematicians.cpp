@@ -1,3 +1,9 @@
+/*
+
+Problem Tags: ['binary search', 'constructive algorithms', 'math'] 
+
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 

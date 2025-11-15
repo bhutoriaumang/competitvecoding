@@ -1,3 +1,9 @@
+/*
+
+Problem Tags: ['greedy', 'math', 'number theory'] 
+
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 

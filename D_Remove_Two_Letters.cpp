@@ -1,3 +1,9 @@
+/*
+
+Problem Tags: ['data structures', 'greedy', 'hashing', 'strings'] 
+
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 

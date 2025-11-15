@@ -139,6 +139,7 @@ def display_submissions_with_code(handle, from_id=1, count=5):
                 print(f"{'='*80}")
                 print(f"ID: {details['id']}")
                 print(f"Problem: {details['problem']} ({details['problem_index']})")
+                print(f"# Tags: {submission['problem']['tags']}")
                 print(f"Verdict: {details['verdict']}")
                 print(f"Language: {details['programming_language']}")
                 print(f"Time: {details['time_consumed_ms']}ms | Memory: {details['memory_consumed_bytes']} bytes")
@@ -149,6 +150,7 @@ def display_submissions_with_code(handle, from_id=1, count=5):
                 
                 if (details['verdict'] == "OK"):
                     with open(f"{details['problem_index']}_{details['problem'].replace(' ', '_')}.cpp", "w") as f:
+                        f.write(f"/*\n\nProblem Tags: {submission['problem']['tags']} \n\n*/\n\n")
                         f.write(details['source_code'])
         else:
             print("Error fetching submissions")
@@ -161,7 +163,7 @@ def display_submissions_with_code(handle, from_id=1, count=5):
 if __name__ == "__main__":
     try:
         # Display submissions with decoded source code
-        display_submissions_with_code('UB2002', from_id=1, count=10000)
+        display_submissions_with_code('UB2002', from_id=1, count=1000)
         
     except Exception as e:
         print(f"Error: {e}")

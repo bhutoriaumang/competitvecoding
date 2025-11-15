@@ -1,3 +1,9 @@
+/*
+
+Problem Tags: ['brute force', 'dp', 'implementation'] 
+
+*/
+
 #include <iostream>
 using namespace std;
 

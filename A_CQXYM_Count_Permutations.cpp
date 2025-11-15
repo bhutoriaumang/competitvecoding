@@ -1,3 +1,9 @@
+/*
+
+Problem Tags: ['combinatorics', 'math', 'number theory'] 
+
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 

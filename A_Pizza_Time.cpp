@@ -1,3 +1,9 @@
+/*
+
+Problem Tags: ['brute force', 'constructive algorithms', 'greedy'] 
+
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 

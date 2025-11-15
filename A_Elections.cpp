@@ -1,3 +1,9 @@
+/*
+
+Problem Tags: ['math'] 
+
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 

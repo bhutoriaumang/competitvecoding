@@ -1,3 +1,9 @@
+/*
+
+Problem Tags: ['constructive algorithms', 'math', 'number theory'] 
+
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 

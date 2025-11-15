@@ -1,3 +1,9 @@
+/*
+
+Problem Tags: ['number theory'] 
+
+*/
+
 #include <iostream>
 #include <vector>
 #include <algorithm>

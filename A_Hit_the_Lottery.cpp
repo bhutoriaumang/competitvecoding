@@ -1,3 +1,9 @@
+/*
+
+Problem Tags: ['dp', 'greedy'] 
+
+*/
+
 #include <iostream>
 using namespace std;
 

@@ -1,3 +1,9 @@
+/*
+
+Problem Tags: ['constructive algorithms', 'sortings'] 
+
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 

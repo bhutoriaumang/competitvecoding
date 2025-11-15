@@ -1,3 +1,9 @@
+/*
+
+Problem Tags: ['bitmasks', 'greedy', 'two pointers'] 
+
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 

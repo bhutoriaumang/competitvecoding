@@ -1,3 +1,9 @@
+/*
+
+Problem Tags: ['binary search', 'math', 'ternary search'] 
+
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 #define ll  long long int

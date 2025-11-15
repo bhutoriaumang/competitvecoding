@@ -1,3 +1,9 @@
+/*
+
+Problem Tags: ['constructive algorithms', 'number theory'] 
+
+*/
+
 #include <iostream>
 #include <vector>
 #include <algorithm>
